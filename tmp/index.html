@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HCW v5 Demo</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="pageWrap">
+            <div id="navCol">
+    <?php if ($main_menu): ?>
+      <div id="navigation"><div class="section">
+        <?php print theme('links__system_main_menu', 
+            array('links' => $main_menu, 
+            'attributes' => array(
+                'id' => 'main-menu', 
+                'class' => array(
+                    'links', 
+                    'inline', 
+                    'clearfix')), 
+            'heading' => t('Main menu'))); ?>
+
+                <nav>
+                    <ul>
+                        <li><a href=#>About</a></li>
+                        <li><a>Work with me</a></li>
+                        <li><a>Resources</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </nav> 
+        </div></div>
+                <ul class="social">
+                    <li>F</li>
+                    <li>T</li>
+                    <li>E</li>
+                </ul>
+                <div>SHARE IIN BANNER</div>
+                <div>Cleanses</div>
+            </div>
+            <div id="contentWrap">
+                <header>
+                <h1>Maria's Lifestyle</h1>
+                <h3>Ways to improve your life today</h3>
+                </header>
+                <div class="banner">"Loving yourself is where it all begins"</div>
+                <div class="contentBox clearfix">
+                    <div class="headshot">
+                        <img src="http://dummyimage.com/250">
+                    </div>    
+                    <div class="content">
+                        <h2>Welcome</h2>
+                    <h4>When was the last time you received the personal attention you deserve and talked with someone about your health?</h4>
+                    <p>It's rare for anyone to get an hour to explore their wellness goals with a trained professional. As a health coach, I create a supportive environment that enables you to articulate and achieve you goals. Throughout my education, I have been exposed to the most cutting-edge dietary theories and studied highly effective coaching techniques to help you discover a lifestyle that works best for you.
+                <br><br>Read More
+                    </p>
+                    </div>
+                </div>
+                <div class="box">
+                    Featured recipe
+                </div> 
+                <div class="box">
+                    Featured blog post
+                </div> 
+            </div>
+        </div>
+    </body>
+</html>
