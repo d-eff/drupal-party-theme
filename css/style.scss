@@ -92,9 +92,10 @@ header {
     h3 {
         
     }
-    region-header-form {
+    .headerForm {
         width:40%;
         float:right;
+        display:inline;
     }
 }
 
@@ -133,9 +134,58 @@ header {
 
 /*-----------MOBILE-------------*/
 @media all and (max-width:768px){
-
+    #pageWrap {
+        margin:0 auto;
+    }
     #navCol {
-        display:none;
+        width:100%;
+        margin:0px;
+        nav {
+            margin:0px;
+            .menu li {
+                margin:0px;
+            }
+            ul li ul {
+                position:relative;
+                top:0;
+                left:0;
+                height:0px;
+                overflow:hidden;
+                li {
+                    width:100%;
+                    border-right:none;
+                    background-color:#000;
+                }
+            }
+            ul li {
+                border-bottom:1px solid #fff;
+                background-color:#282828;
+                .expanded {
+                    height:100%;
+                }
+            a:hover + ul, ul:hover {
+                left:0px;
+            }
+            ul li:first-child {
+                border-top:1px solid #000;
+            }
+        
+            }
+            a {
+                width:100%;
+                color:#fff;
+            }
+            .parent_link a:before {
+                content:"+ ";
+            }
+            .parent_link:after {
+                display:none;
+            }
+        }
+        #block-menu-menu-social {
+            display:none;
+        }
+
     }
     #contentWrap {
         width:100%;
@@ -147,6 +197,22 @@ header {
 }
 
 @media all and (max-width:320px){
+    header {
+        text-align:center;
+        h1 {
+            font-size:1.4rem;
+            background-color:#282828;
+            padding:10px 0;
+            a {
+                color:#fff;
+            }
+        }
+        h3 {
+            font-size:0.8rem;
+            padding:20px 0;
+            
+        }
+    }   
     #contentWrap {
         .banner {
             color:#000;

@@ -60,5 +60,6 @@
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
+    <script src="/sites/all/themes/party/js/main.js" type="text/javascript"></script>
 </body>
 </html>
