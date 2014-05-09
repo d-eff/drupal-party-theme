@@ -5,8 +5,7 @@ core = 7.x
 engine = phptemplate
 stylesheets[all][] = style.css
 
-regions[nav_banners] = Nav banners - left column
-regions[main_menu] = Menu
+regions[nav_col] = Nav + banners - left column
 regions[header_form] = Form section in header
 regions[banner] = Banner in head
 regions[content] = Content

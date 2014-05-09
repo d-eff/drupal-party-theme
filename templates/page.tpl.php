@@ -1,20 +1,6 @@
 <div id="pageWrap">
     <div id="navCol">
-    <?php if ($main_menu  || $secondary_menu): ?>
-        <nav>
-            <?php print theme('links__system_main_menu', 
-            array('links' => $main_menu, 
-                'attributes' => array(
-                    'id' => 'main-menu', 
-                    'class' => array(
-                        'links', 'mainNav')))); ?>
-        </nav> 
-        
-<?php endif; ?>
-
-    <?php print render($page['main_menu']); ?>
-
-    <?php print render($page['nav_banners']); ?>
+    <?php print render($page['nav_col']); ?>
     </div>
 
     <div id="contentWrap">

@@ -46,8 +46,15 @@
 ?>
 <div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
+  <?php print render($title_prefix); ?>
+<?php if ($block->subject == "Main menu"): ?>
+    <nav>
+        <?php print $content ?>
+    </nav>
+    <?php else: ?>
+      <div class="content"<?php print $content_attributes; ?>>
+        <?php print $content ?>
+      </div>
+<?php endif;?>
 
-  <nav <?php print $content_attributes; ?>>
-    <?php print $content ?>
-  </nav>
 </div>

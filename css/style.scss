@@ -39,15 +39,24 @@ h4 {
             border-bottom: 1px solid #000;
             text-align:center;
             ul {
-                position:relative;
-                left:250px;
-                top:-57px;
-                display:none;
+                position:absolute;
+                left:-9999px;
+                top:0px;
+                z-index:10;
+                li {
+                    background-color:#fff;
+                    border-right:2px solid aqua;
+                    width:200px; 
+                }
             }
             a {
                 text-transform:uppercase;
                 display:inline-block;
+                box-sizing:border-box;
                 padding:15px 40px;
+            }
+            a:hover + ul, ul:hover {
+                left:200px;
             }
         }
     }   
@@ -56,6 +65,9 @@ h4 {
         li {
             display:inline;
         }
+    }
+    .parent_link:after {
+        content: ">";
     }
 }
 
@@ -117,4 +129,50 @@ header {
     content:"";
     clear:both;
     height:0;
+}
+
+/*-----------MOBILE-------------*/
+@media all and (max-width:768px){
+
+    #navCol {
+        display:none;
+    }
+    #contentWrap {
+        width:100%;
+        .banner {
+            color:#000;
+            background-color:#fff;
+        }
+    }
+}
+
+@media all and (max-width:320px){
+    #contentWrap {
+        .banner {
+            color:#000;
+            background-color:#fff;
+            font-size: 1.3rem;
+        }
+    }
+
+    .contentBox {
+        .headshot {
+            width:100%;
+            margin:0 auto;
+            padding:20px 0px;
+        }
+        .content {
+            text-align:left;
+            h2 {
+                text-align:center;
+            }
+        }
+    }
+    .box {
+        width:95%;
+        margin:20px auto;
+        display:block;
+    }
+
+
 }
