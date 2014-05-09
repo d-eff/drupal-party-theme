@@ -50,6 +50,7 @@
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="/sites/all/themes/party/css/style.css">
   <?php print $scripts; ?>
 </head>

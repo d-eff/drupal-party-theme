@@ -50,7 +50,7 @@ a {
   color: black; }
 
 body {
-  font-family: "Lucida Grande", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px; }
 
 h1 {
@@ -115,6 +115,8 @@ h4 {
     text-align: center;
     box-sizing: border-box; }
 
+header #burger {
+  display: none; }
 header h1 {
   padding: 0 0 20px 0; }
 header .headerForm {
@@ -133,6 +135,8 @@ header .headerForm {
     padding: 20px; }
   .contentBox .content h4 {
     padding: 0 20px 20px; }
+  .contentBox .content p {
+    padding: 10px; }
 
 .box {
   display: inline-block;
@@ -156,7 +160,8 @@ header .headerForm {
     width: 100%;
     margin: 0px; }
     #navCol nav {
-      margin: 0px; }
+      margin: 0px;
+      display: none; }
       #navCol nav .menu li {
         margin: 0px; }
       #navCol nav ul li ul {
@@ -183,8 +188,12 @@ header .headerForm {
         color: #fff; }
       #navCol nav .parent_link a:before {
         content: "+ "; }
+      #navCol nav .child_link a:before {
+        content: none; }
       #navCol nav .parent_link:after {
         display: none; }
+    #navCol nav.full {
+      display: block; }
     #navCol #block-menu-menu-social {
       display: none; }
 
@@ -192,19 +201,40 @@ header .headerForm {
     width: 100%; }
     #contentWrap .banner {
       color: #000;
-      background-color: #fff; } }
+      background-color: #fff;
+      margin: 0;
+      padding: 10px 40px; }
+
+  header #burger {
+    display: inline;
+    float: left;
+    padding: 0 20px;
+    width: 10%; }
+  header .headerForm {
+    display: none; } }
 @media all and (max-width: 320px) {
   header {
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
     header h1 {
+      position: fixed;
+      display: block;
+      width: 100%;
+      top: 0px;
+      left: 0px;
       font-size: 1.4rem;
       background-color: #282828;
-      padding: 10px 0; }
+      padding: 10px 0;
+      z-index: 999; }
       header h1 a {
-        color: #fff; }
+        color: #fff;
+        width: 100%; }
     header h3 {
       font-size: 0.8rem;
       padding: 20px 0; }
+
+  #navCol {
+    margin: 40px 0 0 0; }
 
   #contentWrap .banner {
     color: #000;
@@ -214,13 +244,16 @@ header .headerForm {
   .contentBox .headshot {
     width: 100%;
     margin: 0 auto;
-    padding: 20px 0px; }
+    padding: 20px 0px;
+    text-align: center; }
   .contentBox .content {
     text-align: left; }
     .contentBox .content h2 {
       text-align: center; }
+    .contentBox .content p {
+      padding: 0 20px; }
 
   .box {
-    width: 95%;
+    width: 90%;
     margin: 20px auto;
     display: block; } }

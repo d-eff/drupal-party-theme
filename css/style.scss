@@ -3,7 +3,7 @@ $default: #000;
 @import 'reset';
 
 body {
-    font-family: "Lucida Grande", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size:16px;
 }
 
@@ -86,6 +86,9 @@ h4 {
 }
 
 header {
+    #burger {
+        display:none;
+    }
     h1 {
         padding:0 0 20px 0;
     }
@@ -113,6 +116,9 @@ header {
         }
         h4 {
             padding:0 20px 20px;
+        }
+        p {
+            padding:10px;
         }
     }
 }
@@ -142,6 +148,7 @@ header {
         margin:0px;
         nav {
             margin:0px;
+            display:none;
             .menu li {
                 margin:0px;
             }
@@ -178,10 +185,16 @@ header {
             .parent_link a:before {
                 content:"+ ";
             }
+            .child_link a:before {
+                content:none;
+            }
             .parent_link:after {
                 display:none;
             }
         }
+            nav.full {
+                display:block;
+            }
         #block-menu-menu-social {
             display:none;
         }
@@ -192,6 +205,19 @@ header {
         .banner {
             color:#000;
             background-color:#fff;
+            margin:0;
+            padding:10px 40px;
+        }
+    }
+    header {
+        #burger {
+            display:inline;
+            float:left;
+            padding:0 20px;
+            width:10%;
+        }
+        .headerForm {
+            display:none;
         }
     }
 }
@@ -199,20 +225,30 @@ header {
 @media all and (max-width:320px){
     header {
         text-align:center;
+        width:100%;
         h1 {
+            position:fixed;
+            display:block;
+            width:100%;
+            top:0px;
+            left:0px;
             font-size:1.4rem;
             background-color:#282828;
             padding:10px 0;
+            z-index:999;
             a {
                 color:#fff;
+                width:100%;
             }
         }
         h3 {
             font-size:0.8rem;
-            padding:20px 0;
-            
+            padding:20px 0; 
         }
     }   
+    #navCol {
+        margin:40px 0 0 0;
+    }
     #contentWrap {
         .banner {
             color:#000;
@@ -226,16 +262,20 @@ header {
             width:100%;
             margin:0 auto;
             padding:20px 0px;
+            text-align:center;
         }
         .content {
             text-align:left;
             h2 {
                 text-align:center;
             }
+            p {
+                padding:0 20px; 
+            }
         }
     }
     .box {
-        width:95%;
+        width:90%;
         margin:20px auto;
         display:block;
     }

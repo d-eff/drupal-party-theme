@@ -7,12 +7,13 @@
     <?php if ($site_name || $site_slogan): ?>
         <header>
         <?php if($site_name): ?>
-        <h1><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a></h1>
+        <h1>
+            <a id="burger" href="#"><img src="/sites/all/themes/party/images/menu-alt-25b.png" alt="menu burger" ></a>
+            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a></h1>
         <?php endif; ?>
         <?php if($site_slogan): ?>
             <h3><?php print $site_slogan; ?></h3>
         <?php endif; ?>
-
 
         <?php print render($page['header_form']); ?>
         </header>
