@@ -75,6 +75,8 @@ h4 {
   margin: 0 20px 20px 0; }
   #navCol nav {
     margin: 0 0 20px 0; }
+    #navCol nav ul {
+      position: relative; }
     #navCol nav ul li:first-child {
       border-top: 1px solid #000; }
     #navCol nav ul li {
@@ -161,7 +163,10 @@ header .headerForm {
     margin: 0px; }
     #navCol nav {
       margin: 0px;
-      display: none; }
+      display: none;
+      position: fixed;
+      top: 49px;
+      width: 100%; }
       #navCol nav .menu li {
         margin: 0px; }
       #navCol nav ul li ul {

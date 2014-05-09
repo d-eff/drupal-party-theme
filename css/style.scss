@@ -32,6 +32,9 @@ h4 {
     margin: 0 20px 20px 0;
     nav {  
         margin:0 0 20px 0;
+        ul {
+            position:relative;
+        }
         ul li:first-child{
             border-top:1px solid #000;
         }
@@ -149,6 +152,9 @@ header {
         nav {
             margin:0px;
             display:none;
+            position:fixed;
+            top:49px;
+            width:100%;
             .menu li {
                 margin:0px;
             }
@@ -279,6 +285,4 @@ header {
         margin:20px auto;
         display:block;
     }
-
-
 }
