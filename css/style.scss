@@ -51,7 +51,7 @@ h4 {
                 }
             }
             a, .nolink {
-                color:#fff;
+                color:#000;
                 text-transform:uppercase;
                 display:inline-block;
                 box-sizing:border-box;
@@ -59,7 +59,7 @@ h4 {
                 width:100%;
                 cursor:pointer;
             }
-            a:hover + ul, ul:hover {
+            span:hover + ul, ul:hover {
                 left:190px;
             }
         }
@@ -193,17 +193,17 @@ header {
                 .expanded {
                     height:100%;
                 }
-            a:hover + ul, ul:hover {
-                left:0px;
-            }
-            ul li:first-child {
-                border-top:1px solid #000;
-            }
+                a, .nolink {
+                    width:100%;
+                    color:#fff;
+                }
+                ul li:first-child {
+                    border-top:1px solid #000;
+                }
+                span:hover + ul, ul:hover {
+                    left:0px;
+                }
         
-            }
-            a {
-                width:100%;
-                color:#fff;
             }
             .parent_link a:before, span:before {
                 content:"+ ";

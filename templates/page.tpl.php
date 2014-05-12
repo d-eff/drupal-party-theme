@@ -21,10 +21,8 @@
         </header>
     <?php endif; ?>     
 
-    <?php print render($page['banner']); ?>
 
         <div class="contentBox clearfix">
-<h3>party</h3>
             <div class="content">
                 <?php print render($page['content']); ?>
             </div>

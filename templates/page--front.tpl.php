@@ -24,8 +24,8 @@
 
     <?php print render($page['banner']); ?>
 
-        <div class="contentBox clearfix">
-<h3>test</h3>
+    <?php print render($page['welcome']); ?>
+            <div class="contentBox clearfix">
             <div class="content">
                 <?php print render($page['content']); ?>
             </div>

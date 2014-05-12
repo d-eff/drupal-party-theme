@@ -8,6 +8,7 @@ stylesheets[all][] = style.css
 regions[nav_col] = Nav + banners - left column
 regions[header_form] = Form section in header
 regions[mobile_menu] = Mobile Menu
+regions[welcome] = Welcome section on the front page
 regions[banner] = Banner in head
 regions[content] = Content
 regions[featured] = Featured
