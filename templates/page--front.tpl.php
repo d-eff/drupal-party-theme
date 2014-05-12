@@ -8,6 +8,7 @@
          <header class="clearfix">
             <div class="sitename">
         <?php if($site_name): ?>
+        
         <h1>
             <a id="burger" href="#"><img src="/sites/all/themes/party/images/menu-alt-25b.png" alt="menu burger" ></a>
             <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a></h1>
@@ -24,6 +25,7 @@
     <?php print render($page['banner']); ?>
 
         <div class="contentBox clearfix">
+<h3>test</h3>
             <div class="content">
                 <?php print render($page['content']); ?>
             </div>

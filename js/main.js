@@ -5,7 +5,6 @@ window.onload = function(){
     
         
     menu.addEventListener("click", function(e){
-        e.preventDefault();
         var sib  = e.target.nextElementSibling;
         
         if(sib){

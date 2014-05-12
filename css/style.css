@@ -67,7 +67,7 @@ h4 {
 
 #pageWrap {
   max-width: 1024px;
-  margin: 20px auto; }
+  margin: 40px auto 0; }
 
 #navCol {
   width: 20%;
@@ -90,14 +90,16 @@ h4 {
           background-color: #fff;
           border-right: 2px solid aqua;
           width: 200px; }
-      #navCol nav ul li a {
+      #navCol nav ul li a, #navCol nav ul li .nolink {
+        color: #fff;
         text-transform: uppercase;
         display: inline-block;
         box-sizing: border-box;
         padding: 15px 20px;
-        width: 100%; }
+        width: 100%;
+        cursor: pointer; }
       #navCol nav ul li a:hover + ul, #navCol nav ul li ul:hover {
-        left: 200px; }
+        left: 190px; }
   #navCol .social {
     margin: 0 0 20px 0; }
     #navCol .social li {
@@ -110,7 +112,8 @@ h4 {
 
 #contentWrap {
   width: 70%;
-  float: left; }
+  float: left;
+  margin: 0 0 40px 0; }
   #contentWrap .banner {
     color: #fff;
     background-color: #000;
@@ -136,11 +139,10 @@ header .headerForm {
   margin: 0 15px 30px 0; }
 .contentBox .content {
   display: inline-block;
-  text-align: center;
   font-size: 1rem;
   margin: 0 0 25px 0; }
   .contentBox .content h2 {
-    padding: 20px; }
+    padding: 20px 0; }
   .contentBox .content h4 {
     padding: 0 20px 20px; }
   .contentBox .content p {
@@ -205,7 +207,7 @@ header .headerForm {
       #navCol nav a {
         width: 100%;
         color: #fff; }
-      #navCol nav .parent_link a:before {
+      #navCol nav .parent_link a:before, #navCol nav span:before {
         content: "+ "; }
       #navCol nav .child_link a:before {
         content: none; }
@@ -287,8 +289,6 @@ header .headerForm {
     text-align: left; }
     .contentBox .content h2 {
       text-align: center; }
-    .contentBox .content p {
-      padding: 0 20px; }
 
   .box {
     width: 100%;
