@@ -32,19 +32,17 @@ h4 {
     margin: 0 20px 20px 0;
     nav {  
         margin:0 0 20px 0;
-        ul {
-            position:relative;
-        }
         ul li:first-child{
             border-top:1px solid #000;
         }
         ul li {
             border-bottom: 1px solid #000;
             text-align:center;
+            position:relative;
             ul {
                 position:absolute;
                 left:-9999px;
-                top:0px;
+                top:-1px;
                 z-index:10;
                 li {
                     background-color:#fff;
@@ -56,7 +54,8 @@ h4 {
                 text-transform:uppercase;
                 display:inline-block;
                 box-sizing:border-box;
-                padding:15px 40px;
+                padding:15px 20px;
+                width:100%;
             }
             a:hover + ul, ul:hover {
                 left:200px;
@@ -71,6 +70,9 @@ h4 {
     }
     .parent_link:after {
         content: ">";
+        position:absolute;
+        top:15px;
+        right:12px;
     }
 }
 
@@ -98,22 +100,27 @@ header {
     h3 {
         
     }
+    .sitename {
+        float:left;
+        width:50%;
+    }
     .headerForm {
         width:40%;
-        float:right;
-        display:inline;
+        float:left;
     }
 }
 
 .contentBox {
     .headshot {
         float:left;
-        padding: 0 10px 0 0;
+        margin: 0 15px 30px 0;
+
     }
     .content {
-        display:inline;
+        display:inline-block;
         text-align:center;
         font-size:1rem;
+        margin:0 0 25px 0;
         h2 {
             padding:20px;
         }
@@ -151,10 +158,12 @@ header {
         margin:0px;
         nav {
             margin:0px;
-            display:none;
+            height:0;
+            overflow:hidden;
             position:fixed;
             top:49px;
             width:100%;
+            transition:height 0.4s ease-in;
             .menu li {
                 margin:0px;
             }
@@ -199,7 +208,7 @@ header {
             }
         }
             nav.full {
-                display:block;
+                height:100%;
             }
         #block-menu-menu-social {
             display:none;
@@ -221,6 +230,10 @@ header {
             float:left;
             padding:0 20px;
             width:10%;
+        }
+        .sitename {
+            float:none;
+            width:100%;
         }
         .headerForm {
             display:none;

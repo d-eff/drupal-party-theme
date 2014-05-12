@@ -75,17 +75,16 @@ h4 {
   margin: 0 20px 20px 0; }
   #navCol nav {
     margin: 0 0 20px 0; }
-    #navCol nav ul {
-      position: relative; }
     #navCol nav ul li:first-child {
       border-top: 1px solid #000; }
     #navCol nav ul li {
       border-bottom: 1px solid #000;
-      text-align: center; }
+      text-align: center;
+      position: relative; }
       #navCol nav ul li ul {
         position: absolute;
         left: -9999px;
-        top: 0px;
+        top: -1px;
         z-index: 10; }
         #navCol nav ul li ul li {
           background-color: #fff;
@@ -95,7 +94,8 @@ h4 {
         text-transform: uppercase;
         display: inline-block;
         box-sizing: border-box;
-        padding: 15px 40px; }
+        padding: 15px 20px;
+        width: 100%; }
       #navCol nav ul li a:hover + ul, #navCol nav ul li ul:hover {
         left: 200px; }
   #navCol .social {
@@ -103,7 +103,10 @@ h4 {
     #navCol .social li {
       display: inline; }
   #navCol .parent_link:after {
-    content: ">"; }
+    content: ">";
+    position: absolute;
+    top: 15px;
+    right: 12px; }
 
 #contentWrap {
   width: 70%;
@@ -121,18 +124,21 @@ header #burger {
   display: none; }
 header h1 {
   padding: 0 0 20px 0; }
+header .sitename {
+  float: left;
+  width: 50%; }
 header .headerForm {
   width: 40%;
-  float: right;
-  display: inline; }
+  float: left; }
 
 .contentBox .headshot {
   float: left;
-  padding: 0 10px 0 0; }
+  margin: 0 15px 30px 0; }
 .contentBox .content {
-  display: inline;
+  display: inline-block;
   text-align: center;
-  font-size: 1rem; }
+  font-size: 1rem;
+  margin: 0 0 25px 0; }
   .contentBox .content h2 {
     padding: 20px; }
   .contentBox .content h4 {
@@ -163,10 +169,12 @@ header .headerForm {
     margin: 0px; }
     #navCol nav {
       margin: 0px;
-      display: none;
+      height: 0;
+      overflow: hidden;
       position: fixed;
       top: 49px;
-      width: 100%; }
+      width: 100%;
+      transition: height 0.4s ease-in; }
       #navCol nav .menu li {
         margin: 0px; }
       #navCol nav ul li ul {
@@ -198,7 +206,7 @@ header .headerForm {
       #navCol nav .parent_link:after {
         display: none; }
     #navCol nav.full {
-      display: block; }
+      height: 100%; }
     #navCol #block-menu-menu-social {
       display: none; }
 
@@ -215,6 +223,9 @@ header .headerForm {
     float: left;
     padding: 0 20px;
     width: 10%; }
+  header .sitename {
+    float: none;
+    width: 100%; }
   header .headerForm {
     display: none; } }
 @media all and (max-width: 320px) {
