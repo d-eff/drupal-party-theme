@@ -165,9 +165,11 @@ header .headerForm {
     margin: 0 auto; }
 
   #navCol {
-    width: 0;
-    margin: 0px;
-    position: absolute;
+    width: 70%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
     background-color: grey;
     transition: width 0.3s linear; }
     #navCol nav {
@@ -215,6 +217,11 @@ header .headerForm {
 
   #contentWrap {
     width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    background-color: #fff;
     transition: -webkit-transform 0.3s linear; }
     #contentWrap .banner {
       color: #000;
@@ -257,7 +264,7 @@ header .headerForm {
       padding: 20px 0; }
 
   #navCol {
-    margin: 40px 0 0 0; }
+    margin: 1px 0 0 0; }
 
   #contentWrap .banner {
     color: #000;
