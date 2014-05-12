@@ -50,7 +50,7 @@ a {
   color: black; }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px; }
 
 h1 {
@@ -148,9 +148,15 @@ header .headerForm {
 
 .box {
   display: inline-block;
-  width: 45%;
+  width: 48%;
   border: 1px solid #000;
   height: 300px; }
+
+.odd {
+  float: left; }
+
+.even {
+  float: right; }
 
 .clearfix:after {
   visibility: hidden;
@@ -161,11 +167,8 @@ header .headerForm {
 
 /*-----------MOBILE-------------*/
 @media all and (max-width: 768px) {
-  #pageWrap {
-    margin: 0 auto; }
-
   #navCol {
-    width: 70%;
+    width: 40%;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -211,38 +214,36 @@ header .headerForm {
     #navCol #block-menu-menu-social {
       display: none; }
 
-  #navCol.full {
-    width: 70%;
-    height: 100%; }
-
   #contentWrap {
     width: 100%;
+    box-sizing: border-box;
+    padding: 40px;
     position: absolute;
     top: 0px;
     left: 0px;
     z-index: 2;
     background-color: #fff;
     transition: -webkit-transform 0.3s linear; }
-    #contentWrap .banner {
-      color: #000;
-      background-color: #fff;
-      margin: 0;
-      padding: 10px 40px; }
 
   .shifted {
-    -webkit-transform: translateX(218px); }
+    -webkit-transform: translateX(307px); }
 
   header #burger {
     display: inline;
     float: left;
     padding: 0 20px;
-    width: 10%; }
+    width: 10%;
+    margin: 0 -40px; }
   header .sitename {
     float: none;
-    width: 100%; }
+    width: 100%;
+    text-align: center; }
   header .headerForm {
     display: none; } }
 @media all and (max-width: 320px) {
+  #pageWrap {
+    margin: 0 auto; }
+
   header {
     text-align: center;
     width: 100%; }
@@ -262,9 +263,15 @@ header .headerForm {
     header h3 {
       font-size: 0.8rem;
       padding: 20px 0; }
+    header #burger {
+      margin: 0; }
+
+  .shifted {
+    -webkit-transform: translateX(218px); }
 
   #navCol {
-    margin: 1px 0 0 0; }
+    margin: 1px 0 0 0;
+    width: 70%; }
 
   #contentWrap .banner {
     color: #000;
@@ -284,6 +291,6 @@ header .headerForm {
       padding: 0 20px; }
 
   .box {
-    width: 90%;
+    width: 100%;
     margin: 20px auto;
     display: block; } }

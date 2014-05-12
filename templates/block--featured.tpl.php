@@ -45,6 +45,6 @@
  */
 ?>
 
-  <div class="box"<?php print $content_attributes; ?>>
+  <div class="box <?php print $block_zebra; ?>"<?php print $content_attributes; ?>>
     <?php print $content ?>
   </div>

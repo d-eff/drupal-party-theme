@@ -15,7 +15,6 @@ window.onload = function(){
 
     burger.addEventListener("click", function(e){
         e.preventDefault();
-        console.log("woo");
         menu.classList.toggle("full");
         cont.classList.toggle("shifted");
     
