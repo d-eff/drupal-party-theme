@@ -155,7 +155,7 @@ header {
     }
     #navCol {
         width:70%;
-        position:fixed;
+        position:absolute;
         top:0px;
         left:0px;
         z-index:1;
@@ -221,7 +221,7 @@ header {
             }
     #contentWrap {
         width:100%;
-        position:fixed;
+        position:absolute;
         top:0px;
         left:0px;
         z-index:2;
