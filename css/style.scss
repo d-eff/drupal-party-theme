@@ -154,16 +154,17 @@ header {
         margin:0 auto;
     }
     #navCol {
-        width:100%;
+        width:0;
         margin:0px;
+        position:absolute;
+        background-color:grey;
+        transition:width 0.3s linear;
         nav {
             margin:0px;
-            height:0;
+            height:100%;
+            display:block;
             overflow:hidden;
-            position:fixed;
-            top:49px;
-            width:100%;
-            transition:height 0.4s ease-in;
+            top:0px;
             .menu li {
                 margin:0px;
             }
@@ -207,23 +208,29 @@ header {
                 display:none;
             }
         }
-            nav.full {
-                height:100%;
-            }
         #block-menu-menu-social {
             display:none;
         }
 
     }
+            #navCol.full {
+                width:70%;
+                height:100%;
+            }
     #contentWrap {
         width:100%;
+        transition:-webkit-transform 0.3s linear;
         .banner {
             color:#000;
             background-color:#fff;
             margin:0;
             padding:10px 40px;
         }
+
     }
+        .shifted {
+            -webkit-transform:translateX(218px);
+        }
     header {
         #burger {
             display:inline;

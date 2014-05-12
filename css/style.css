@@ -165,16 +165,17 @@ header .headerForm {
     margin: 0 auto; }
 
   #navCol {
-    width: 100%;
-    margin: 0px; }
+    width: 0;
+    margin: 0px;
+    position: absolute;
+    background-color: grey;
+    transition: width 0.3s linear; }
     #navCol nav {
       margin: 0px;
-      height: 0;
+      height: 100%;
+      display: block;
       overflow: hidden;
-      position: fixed;
-      top: 49px;
-      width: 100%;
-      transition: height 0.4s ease-in; }
+      top: 0px; }
       #navCol nav .menu li {
         margin: 0px; }
       #navCol nav ul li ul {
@@ -205,18 +206,24 @@ header .headerForm {
         content: none; }
       #navCol nav .parent_link:after {
         display: none; }
-    #navCol nav.full {
-      height: 100%; }
     #navCol #block-menu-menu-social {
       display: none; }
 
+  #navCol.full {
+    width: 70%;
+    height: 100%; }
+
   #contentWrap {
-    width: 100%; }
+    width: 100%;
+    transition: -webkit-transform 0.3s linear; }
     #contentWrap .banner {
       color: #000;
       background-color: #fff;
       margin: 0;
       padding: 10px 40px; }
+
+  .shifted {
+    -webkit-transform: translateX(218px); }
 
   header #burger {
     display: inline;

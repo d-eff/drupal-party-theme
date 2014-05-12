@@ -1,6 +1,7 @@
 window.onload = function(){
-    var menu = document.querySelectorAll("nav")[0],
-        burger = document.querySelectorAll("#burger")[0];
+    var menu = document.querySelector("#navCol"),
+        burger = document.querySelectorAll("#burger")[0],
+        cont =  document.querySelector('#contentWrap');
     
         
     menu.addEventListener("click", function(e){
@@ -16,6 +17,7 @@ window.onload = function(){
         e.preventDefault();
         console.log("woo");
         menu.classList.toggle("full");
+        cont.classList.toggle("shifted");
     
     });
 
