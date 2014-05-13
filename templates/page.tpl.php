@@ -21,6 +21,7 @@
         </header>
     <?php endif; ?>     
 
+<h1><?php print $title; ?></h1>
 
         <div class="contentBox clearfix">
             <div class="content">

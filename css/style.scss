@@ -113,12 +113,21 @@ header {
     }
 }
 
-.contentBox {
     .headshot {
         float:left;
         margin: 0 15px 30px 0;
 
     }
+    .content {
+        h4 {
+            margin: 0 0 15px 0;
+        }
+        img {
+            float:left;
+            margin: 0 15px 0 0;
+        }
+    }
+.contentBox {
     .content {
         display:inline-block;
         font-size:1rem;
@@ -133,11 +142,16 @@ header {
             padding:10px;
         }
     }
+    .node {
+        margin: 0 0 20px 0;
+    }
 }
 
 .box {
     display:inline-block;
-    width:48%;
+    max-width:48%;
+    box-sizing:border-box;
+    padding:20px;
     border:1px solid #000;
     height:300px;
 }
