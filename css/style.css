@@ -97,9 +97,11 @@ h4 {
         box-sizing: border-box;
         padding: 15px 20px;
         width: 100%;
-        cursor: pointer; }
+        cursor: pointer;
+        position: relative;
+        z-index: 5; }
       #navCol nav ul li span:hover + ul, #navCol nav ul li ul:hover {
-        left: 190px; }
+        left: 97%; }
   #navCol .social {
     margin: 0 0 20px 0; }
     #navCol .social li {
@@ -108,7 +110,8 @@ h4 {
     content: ">";
     position: absolute;
     top: 15px;
-    right: 12px; }
+    right: 12px;
+    z-index: 1; }
 
 #contentWrap {
   width: 70%;

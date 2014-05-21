@@ -58,9 +58,11 @@ h4 {
                 padding:15px 20px;
                 width:100%;
                 cursor:pointer;
+                position:relative;
+                z-index:5;
             }
             span:hover + ul, ul:hover {
-                left:190px;
+                left:97%;
             }
         }
     }   
@@ -75,6 +77,7 @@ h4 {
         position:absolute;
         top:15px;
         right:12px;
+        z-index:1;
     }
 }
 
